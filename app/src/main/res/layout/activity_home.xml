@@ -13,7 +13,7 @@
         android:layout_height="match_parent"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-       >
+        android:weightSum="1">
 
         <com.google.android.gms.common.SignInButton
             android:id="@+id/sign_in_button"
@@ -21,7 +21,18 @@
             android:layout_height="wrap_content"
             android:enabled="false"
             android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true" />
+            android:layout_centerHorizontal="true"
+            android:layout_weight="0.08" />
+
+        <ImageButton
+            android:layout_width="220dp"
+            android:layout_height="100dp"
+            android:id="@+id/sign_out_button"
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/signout"
+            android:enabled="true"/>
+
+
     </LinearLayout>
 
 
